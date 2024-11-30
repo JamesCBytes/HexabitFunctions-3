@@ -1,0 +1,8 @@
+Author Connor James
+
+to run code: 
+        make
+        ./hex
+
+This program processes assembly-like instructions from a text file. A stream reads each operation (e.g., MOV, ADDS, SUBS) and extracts the necessary registers or immediate values. For example, MOV reads one register and an immediate value, while ADDS reads three registers and updates both the result and condition flags (N, Z, C, V). Each operation is implemented in its own method, with signed operations modifying flags and unsigned operations strictly updating registers. The state of all registers and flags persists until explicitly changed by another operation. The code uses switch statements to determine the correct operation and operands, and outputs the updated state of registers and flags after each instruction.
+ 
